@@ -8,89 +8,141 @@
 	<title>Metrobus</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/custom.modernizr.js"></script>
-
-	<style>
-
-	html,body{
-		height: 100%;
-	}
-
-	body {margin: 0; padding: 0 }
-
-	#pony{
-		width: 100%;
-		height: 100%;
-	}
-	
-	#position-button{
-		position: absolute;
-		bottom: 20px;
-		left: calc(50% - 25px);
-		z-index: 100;
-	}
-
-	</style>
 </head >
 
 <body>
+	<nav class="unselectable cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+		<h4>Estaciones</h4>
+		<a href="#" class="divisor">Terminal Tlaxcalancingo</a>
+		<a id="estacion1" class="estacion-item" href="#" data-lng="-98.26146" data-lat="19.033803"><span>1 - </span>Emiliano Zapata 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion2" class="estacion-item" href="#" data-lng="-98.25704" data-lat="19.035466"><span>2 - </span>Casa de Ángeles 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion3" class="estacion-item" href="#" data-lng="-98.25180" data-lat="19.036156"><span>3 - </span>Carmen Serdán 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion4" class="estacion-item" href="#" data-lng="-98.24865" data-lat="19.036602"><span>4 - </span>Hospital para el niño poblano 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion5" class="estacion-item" href="#" data-lng="-98.24230" data-lat="19.038894"><span>5 - </span>Estrellas del sur 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion6" class="estacion-item" href="#" data-lng="-98.23732" data-lat="19.042221"><span>6 - </span>Las Ánimas 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion7" class="estacion-item" href="#" data-lng="-98.23575" data-lat="19.043965"><span>7 - </span>25 poniente 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion8" class="estacion-item" href="#" data-lng="-98.23429" data-lat="19.046237"><span>8 - </span>Matamoros 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion9" class="estacion-item" href="#" data-lng="-98.23195" data-lat="19.048955"><span>9 - </span>Juarez - Serdán 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion10" class="estacion-item" href="#" data-lng="-98.22731" data-lat="19.050922"><span>10 - </span>Hermanos Serdán 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion11" class="estacion-item" href="#" data-lng="-98.21946" data-lat="19.057960"><span>11 - </span>San Alejandro 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion12" class="estacion-item" href="#" data-lng="-98.21835" data-lat="19.059380"><span>12 - </span>Defensores de la Republica 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion13" class="estacion-item" href="#" data-lng="-98.21305" data-lat="19.056682"><span>13 - </span>18 Poniente 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion14" class="estacion-item" href="#" data-lng="-98.20848" data-lat="19.058913"><span>14 - </span>Pestalozzi 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion15" class="estacion-item" href="#" data-lng="-98.20554" data-lat="19.060455"><span>15 - </span>Santa Anita 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion16" class="estacion-item" href="#" data-lng="-98.20148" data-lat="19.062260"><span>16 - </span>Constitución de 1917 - 11 Norte 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion17" class="estacion-item" href="#" data-lng="-98.19781" data-lat="19.063223"><span>17 - </span>El rayito 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion18" class="estacion-item" href="#" data-lng="-98.19452" data-lat="19.064156"><span>18 - </span>China Poblana 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion19" class="estacion-item" href="#" data-lng="-98.19169" data-lat="19.064694"><span>19 - </span>Los lavaderos 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion20" class="estacion-item" href="#" data-lng="-98.18822" data-lat="19.064957"><span>20 - </span>Puente Zaragoza 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion21" class="estacion-item" href="#" data-lng="-98.18348" data-lat="19.064744"><span>21 - </span>Ignacio Zaragoza 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion22" class="estacion-item" href="#" data-lng="-98.17886" data-lat="19.064329"><span>22 - </span>Los fuertes 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion23" class="estacion-item" href="#" data-lng="-98.17469" data-lat="19.063771"><span>23 - </span>Tecnologico 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion24" class="estacion-item" href="#" data-lng="-98.17160" data-lat="19.063375"><span>24 - </span>La Cienega 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion25" class="estacion-item" href="#" data-lng="-98.16772" data-lat="19.062711"><span>25 - </span>La rosa 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion26" class="estacion-item" href="#" data-lng="-98.15923" data-lat="19.061935"><span>26 - </span>18 de Noviembre 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion27" class="estacion-item" href="#" data-lng="-98.15402" data-lat="19.061023"><span>27 - </span>La resurreción 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion28" class="estacion-item" href="#" data-lng="-98.14906" data-lat="19.060222"><span>28 - </span>Universidad Tecnológica 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion29" class="estacion-item" href="#" data-lng="-98.14694" data-lat="19.059806"><span>29 - </span>Rivera Anaya 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion30" class="estacion-item" href="#" data-lng="-98.14169" data-lat="19.056906"><span>30 - </span>Amalucan 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion31" class="estacion-item" href="#" data-lng="-98.13987" data-lat="19.056591"><span>31 - </span>Bosques 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion32" class="estacion-item" href="#" data-lng="-98.13127" data-lat="19.055019"><span>32 - </span>Galaxia 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion33" class="estacion-item" href="#" data-lng="-98.12781" data-lat="19.054596"><span>33 - </span>El pilar 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion34" class="estacion-item" href="#" data-lng="-98.12384" data-lat="19.054086"><span>34 - </span>Mitlaxac 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion35" class="estacion-item" href="#" data-lng="-98.11839" data-lat="19.053833"><span>35 - </span>Santa Mago 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a id="estacion36" class="estacion-item" href="#" data-lng="-98.11482" data-lat="19.053863"><span>36 - </span>Chachapa 
+			<icon class="ruta-btn"> Ruta </icon> 
+		</a>
+		<a href="#" class="divisor">Terminal Chachapa</a>
+	</nav>
 	
-	<a id="position-button"><img src="img/ps.png" alt=""></a>
-	<div id="pony"></div>
-	
+	<header class="unselectable">
+		<a id="showLeftPush">=</a>
+	</header>
+	<a id="position-button">
+		<img src="img/ps.png" alt="">
+	</a>
+	<div id="pony" class="unselectable"></div>
+	<div id="instructions" class="hide-element">
+		
+	</div>
 
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script src="js/gmaps.js"></script>
-
-	<script>
-
-	$(document).ready(function(){
-		map = new GMaps({
-			div: '#pony',
-			lat: 19.064795,
-			lng: -98.213911
-		});
-
-		$("#position-button").click(geoFindMe)
-	})
-
-	function geoFindMe() {
-		var output = document.getElementById("out");
-
-		if (!navigator.geolocation){
-			alert("Tu dispositivo no soporta geolocalizacion o esta desactiva. Revisa tu configuración", "Aviso")
-			return;
-		}
-
-		function success(position) {
-			var latitude  = position.coords.latitude;
-			var longitude = position.coords.longitude;
-
-			map.setCenter(latitude,longitude);
-
-			map.addMarker({
-				lat: latitude,
-				lng: longitude,
-				title: 'Estas aqui',
-				click: function(e) {
-					alert('You clicked in this marker');
-				}
-			});
-		};
-
-		function error() {
-			alert ("No podemos determinar tu posición, intentalo mas tarde ");
-		};
-
-		//output.innerHTML = "<p>Locating…</p>";
-
-
-		navigator.geolocation.getCurrentPosition(success, error);
-	}
-
-	</script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

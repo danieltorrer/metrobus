@@ -27,26 +27,12 @@ a:hover {
 a:focus {
   outline: none; }
 
-img,
-object,
-embed {
-  max-width: 100%;
-  height: auto; }
-
 object,
 embed {
   height: 100%; }
 
 img {
   -ms-interpolation-mode: bicubic; }
-
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object {
-  max-width: none !important; }
 
 .left {
   float: left !important; }
